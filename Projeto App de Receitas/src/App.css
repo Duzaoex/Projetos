@@ -1,68 +1,103 @@
-.meals {
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+.App {
+  max-width: 980px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background: #0fa36b;
-  color: #464646;
+  width: 100vw;
+  background-color: #F13030;
+  position: relative;
+  padding: 25px 0;
+  border-bottom: 10px solid #333;
+  margin-bottom: 50px;
+}
+
+header {
+  align-items: center;
+  background-color: #F13030;
   display: flex;
   flex-direction: column;
-  font-family: sans-serif;
-  height: 100vh;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 30px;
   width: 100%;
+  max-width: 980px;
 }
 
-.rocksGlass {
-  animation: shake 1s infinite ease;
-  max-height: 80vh;
+.header-container:after, .header-container:before {
+  background-color: #FFF;
+  border-radius: 50%;
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/*
-#iceLeft {
-  animation: clink .8s infinite ease;
-  opacity: 0.6;
-  transform-origin: 36px 66px;
+.header-container:after {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -35px;
+  border: 5px solid #333;
 }
 
-#iceRight {
-  animation: clink .8s .2s infinite ease;
-  opacity: 0.6;
-  transform-origin: 60px 78px;
-}
-*/
-
-.meals > .logo {
-  animation: shake 1.5s infinite ease;
-  color: aliceblue;
-  font-family: Montserrat , sans-serif;
-  font-size: 3em;
-  font-weight: 900;
+.header-container:before {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  position: absolute;
+  bottom: -21px;
+  z-index: 2;
 }
 
-@keyframes shake {
-
-  0% {
-    transform: rotate(5deg);
-  }
-
-  50% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(5deg);
-  }
+header h1 {
+  color: #FFF;
 }
 
-@keyframes clink {
+nav {
+  margin: 10px 0;
+}
 
-  0% {
-    transform: rotate(-10deg);
-  }
+nav a {
+  color: #FFF;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-  50% {
-    transform: rotate(20deg);
-  }
+nav a:hover {
+  font-weight: 600;
+}
 
-  100% {
-    transform: rotate(-10deg);
+.main-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  padding: 0 30px;
+  width: 100%;
+  max-width: 980px;
+}
+
+@media all and (min-width: 480px) {
+
+  header {
+    flex-direction: row;
   }
 }

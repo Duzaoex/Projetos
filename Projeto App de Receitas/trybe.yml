@@ -1,12 +1,18 @@
 ignore_files:
-  - reporter.json
-  - cypress.config.js
+  - stryker/
+  - src/components/
+  - src/services/
+  - src/types/
+  - src/App.css
+  - src/App.tsx
+  - src/data.ts
+  - src/index.css
+  - setupTests.ts
+  - .eslintrc.json
+  - .eslintignore
   - .stylelintrc.json
   - .stylelintignore
-  - .eslintignore
-  - .eslintrc.json
-  - cypress/
-  - vite.config.ts
-  - tsconfig.json
-  - tsconfig.node.json
-  - setupTests.ts
+  - .gitignore
+  - stryker.conf.json
+  - README.md
+  
