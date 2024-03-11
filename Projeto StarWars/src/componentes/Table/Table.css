@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+table {
+  background-color: black;
+  max-width: 100%;
+  width: 100%;
+}
+
+table th {
+  color: rgb(255, 230, 1);
+}
+
+table td {
+  color: white;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.header img {
+  height: auto;
+  max-height: 700px;
+  max-width: 100%;
+  width: auto;
+}
+
+input {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
